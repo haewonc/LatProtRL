@@ -65,7 +65,7 @@ python run_baseline.py --protein [PROTEIN] --level [LEVEL] --device [DEVICE] --a
 
 
 ## Aggregate and Visualize Results 
-`aggregate.py` merges the results of 5 runs and calculate other evaluation metrics, saving the results in `summary/[ALG]/[PROTEIN]_[LEVEL]_total.csv`. This is common to our summary files and baseline summary files. You can reproduce our Figures 3 and 5 using `visualization.ipynb`. Download the summary files required to reproduce visualization from [Google Drive]().
+`aggregate.py` merges the results of 5 runs and calculate other evaluation metrics, saving the results in `summary/[ALG]/[PROTEIN]_[LEVEL]_total.csv`. This is common to our summary files and baseline summary files. You can reproduce our Figures 3 and 5 using `visualization.ipynb`. Download the summary files required to reproduce visualization from [Google Drive](https://drive.google.com/file/d/1no3um9VcSBkhzMLpGNWsbzr7ea_5TYOO/view?usp=sharing).
 
 ## Train VED
 You may train VED on your own from ESM-2 weights following the commamd below.
@@ -88,5 +88,5 @@ python train_seq.py --protein [PROTEIN] --level [LEVEL] --device [DEVICE] --batc
 
 - [ ] Add description for number of optimization rounds and total timesteps.
 - [ ] Upload VED checkpoints in Google Drive
-- [ ] Upload summary files for visualization in Google Drive
-- [ ] Add description for state/action ablaiton
+- [x] Upload summary files for visualization in Google Drive
+- [ ] Add description for state/action ablation
