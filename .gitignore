@@ -1,0 +1,10 @@
+*.sh
+__pycache__/
+slurm/
+results/
+saved/
+policy/
+tb_log/
+wandb/
+ckpt/esm2*
+summary/
