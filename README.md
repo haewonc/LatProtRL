@@ -1,8 +1,5 @@
 # LatProtRL (ICML 2024)
-This repository provides an official implementation of "Robust Optimization in Protein Fitness Landscapes Using Reinforcement Learning in Latent Space", presented in ICML 2024. We provide model checkpoints, implementation of baseline algorithms, and figure reproduction as well.
-
-- Paper: https://arxiv.org/abs/2405.18986
-- Thread: TBD
+This repository provides an official implementation of "Robust Optimization in Protein Fitness Landscapes Using Reinforcement Learning in Latent Space", presented in ICML 2024. We provide model checkpoints, implementation of baseline algorithms, and figure reproduction as well. Paper: https://arxiv.org/abs/2405.18986
 
 ![Overview](repo/overview.png)
 
@@ -18,7 +15,7 @@ The required dataset and checkpoints of fitness optimization benchmark proposed 
 
 ### Download pretrained weights 
 - Download 650M ESM-2 weights from [here](https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t33_650M_UR50D.pt) and place under `ckpt/`
-- Download our variant encoder-decoder (VED) weights from [Google Drive]() and place under `saved/`
+- Download our variant encoder-decoder (VED) weights from [Google Drive](https://drive.google.com/drive/folders/1_1dsP_9xU4Y6nPMk4317CuIOEYxK3gwI?usp=sharing) and place under `saved/`
 
 ## Optimize 
 ```
@@ -87,6 +84,6 @@ python train_seq.py --protein [PROTEIN] --level [LEVEL] --device [DEVICE] --batc
 ## Todo
 
 - [ ] Add description for number of optimization rounds and total timesteps.
-- [ ] Upload VED checkpoints in Google Drive
+- [x] Upload VED checkpoints in Google Drive
 - [x] Upload summary files for visualization in Google Drive
 - [ ] Add description for state/action ablation
