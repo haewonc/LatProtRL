@@ -59,7 +59,6 @@ def create_opt(args):
     opt.not_sparse = args.not_sparse
     opt.length, opt.min_fitness, opt.max_fitness = get_fitness_info(args.protein)
     opt.step_mut = args.step_mut
-    opt.start_wt = args.start_wt
     if args.protein == 'GFP':
         opt.action_size = 0.3
         opt.topk = 18
